@@ -1,43 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><title>Anna Thomasson</title><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"><style> body {
-  font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
-  color: #171717;
-  padding-left: 5em;
-  padding-right: 5em;
-}
-
-#name {
-  font-size: 4em;
-  margin-top: inherit;
-  margin-bottom: inherit;
-}
-
-#text {
-  margin: 0;
-  font-size: 1.5em;
-}
-
-div {
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
-
-#cover {
-  padding-top: 2em;
-  padding-bottom; 2em;
-}
-
-#image {
-  height: 400px;
-  display: block;
-  margin: 0 auto;
-  margin-top: 2em;
-  margin-bottom: 3.5em;
-}
-
-.container {
-  max-width: 700px;
-}
-</style></head><body><div class="container"><div id="name" class="text-center"><p>Anna Thomasson</p></div><!--#cover--><img src="cover.jpg" id="image" class="img-responsive text-center"><div id="text" class="text-justify"><div class="text-center">
+<div class="text-center">
 <strong>
 A vivid and moving account of the remarkable relationship between the writer Edith Olivier and the young artist Rex Whistler
 </strong>
@@ -55,4 +16,3 @@ Set against a backdrop of the madcap parties of the 1920s, the sophistication of
 Published by Macmillan on 26 March 2015
 </strong>
 </div>
-</div></div></body></html>

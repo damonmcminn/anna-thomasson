@@ -2,7 +2,14 @@ doctype html
 html(lang='en')
   head
     title Anna Thomasson
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css')
     style 
       include style.css
   body
-    | <center>Anna Thomasson</p>
+    div.container
+      #name.text-center
+        p Anna Thomasson
+      //#cover
+      img(src='cover.jpg', class='img-responsive text-center', id='image')
+      #text.text-justify
+        include text.txt
