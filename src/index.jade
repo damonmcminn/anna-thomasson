@@ -4,12 +4,16 @@ html(lang='en')
     title Anna Thomasson
     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css')
     style 
-      include style.css
+      include css/style.css
   body
     div.container
       #name.text-center
-        p Anna Thomasson
+        p Anna Thomasson .... something asdf asdf aslidjfjkasjkdf
       //#cover
       img(src='cover.jpg', class='img-responsive text-center', id='image')
       #text.text-justify
-        include text.txt
+        include text/curious.html
+      div.text-center
+        a(href='http://www.johnsonandalcock.co.uk/anna-thomasson/',
+          id='agency')
+            |johnsonandalcock.co.uk/anna-thomasson
