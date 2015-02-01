@@ -1,19 +1,16 @@
 doctype html
-html(lang='en')
-  head
-    title Anna Thomasson
-    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css')
-    style 
-      include css/style.css
-  body
-    div.container
-      #name.text-center
-        p Anna Thomasson .... something asdf asdf aslidjfjkasjkdf
-      //#cover
-      img(src='cover.jpg', class='img-responsive text-center', id='image')
-      #text.text-justify
-        include text/curious.html
-      div.text-center
-        a(href='http://www.johnsonandalcock.co.uk/anna-thomasson/',
-          id='agency')
-            |johnsonandalcock.co.uk/anna-thomasson
+html
+  include includes/header.jade
+body
+  include includes/menu.jade
+  div.row
+    #text.text-justify.col-xs-6
+      include includes/bio.html
+      div.amzn
+        |Buy a copy 
+        a(href='http://www.amazon.co.uk/Curious-Friendship-Story-Bluestocking-Bright/dp/1447245539')
+          |here
+        |.
+      include includes/quotes.html
+    div.col-xs-6
+      img(src='img/anna.jpg', class='img-responsive text-right', id='image')

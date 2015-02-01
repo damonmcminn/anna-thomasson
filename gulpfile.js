@@ -27,8 +27,8 @@ gulp.task('css', function() {
 
 gulp.task('watch', function() {
   livereload.listen();
-  gulp.watch('src/*.jade', ['html']);
-  gulp.watch('src/css/*.css', ['css']);
+  gulp.watch('src/**/*.jade', ['html']);
+  gulp.watch('src/css/*.css', ['css']).on('changed', livereload.changed);
 });
 
 gulp.task('default', ['webserver', 'watch', 'html', 'css']);

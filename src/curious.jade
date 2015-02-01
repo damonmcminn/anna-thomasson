@@ -1,0 +1,17 @@
+doctype html
+html
+  include includes/header.jade
+body
+  include includes/menu.jade
+  div.row
+    #text.text-justify.col-xs-6
+      include includes/curious.html
+    div.col-xs-6
+      img(src='img/cover.jpg', class='img-responsive text-right', id='curious-cover')
+  div.text-center.text
+    div
+      strong Published by Macmillan on 26 March 2015
+    div.amzn
+      |Buy a copy 
+      a(href='http://www.amazon.co.uk/Curious-Friendship-Story-Bluestocking-Bright/dp/1447245539')
+        |here
