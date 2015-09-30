@@ -32,3 +32,5 @@ gulp.task('watch', function() {
 });
 
 gulp.task('default', ['webserver', 'watch', 'html', 'css']);
+
+gulp.task('build', ['html', 'css']);
