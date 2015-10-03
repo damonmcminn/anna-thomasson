@@ -1,16 +1,28 @@
-doctype html
-html
-  include includes/header.jade
-body
-  include includes/menu.jade
-  div.row
-    #text.text-justify.col-xs-6
-      include includes/bio.html
-      div.amzn
-        |Buy a copy 
-        a(href='http://www.amazon.co.uk/Curious-Friendship-Story-Bluestocking-Bright/dp/1447245539')
-          |here
-        |.
-      include includes/quotes.html
-    div.col-xs-6
-      img(src='img/anna.jpg', class='img-responsive text-right', id='image')
+extends layout/default.jade
+
+block content
+  article
+    section.about__bio: p.
+      Anna Thomasson studied for an M Phil in Biography at the University of Buckingham
+      and her thesis was shortlisted for the #[i Daily Mail] Biographers' Club Prize.
+      She lives in Brighton. #[i A Curious Friendship], published by Macmillan, is her first book.
+    section.about__purchase-copy: include includes/amazon
+    section.about__quotes
+      p.
+        'Anna Thomasson is a wonderful writer, with a pitch-perfect ear and a
+        marvellous sense of style. She knows her characters intimately with the
+        result that one completely trusts her judgment every inch of the way.' 
+        Selina Hastings, author of #[i The Red Earl] and #[i The Secret Lives of Somerset Maugham]
+      p.
+        'A vibrant, admirably researched debut. A non-fictional #[i Brideshead Revisited],
+        it is piquantly evocative of that lost aesthetic echelon of 1920s and 1930s
+        society which dissolved amid the shadows of war; and the convention-defying
+        friendship threaded through it is enthralling.' Caroline Sanderson, writer,
+        reviewer and Associate Editor of the #[i Bookseller]
+      p.
+        'Moving, thoughtful, entertaining and magnificently researched account of
+        a bohemian art student and a sharp-witted - sometimes comically snobbish -
+        spinster, this is an outstandingly accomplished and original first biography
+        from a writer for whom we can predict a very bright future.' Miranda Seymour,
+        author of <i>In My Father's House</i> and #[i Noble Endeavours]
+    figure.about__portrait: img(src='img/anna.jpg')

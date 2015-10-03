@@ -1,25 +1,20 @@
-doctype html
-html
-  include includes/header.jade
-body
-  include includes/menu.jade
-  div.text-center
-    div.text
-      strong Contact
-    div
-      u.text Literary Agent
-      p.text Ed Wilson at Johson & Alcock
-      a(href='mailto:ed@johnsonandalcock.co.uk')
-        |ed@johnsonandalcock.co.uk
-      br
-      a(href='http://www.johnsonandalcock.co.uk/anna-thomasson/')
-        |johnsonandalcock.co.uk/anna-thomasson
-    br
-    div
-      u.text Publicist for 
-        i A Curious Friendship
-      p.text Dusty Miller at Macmillan
-      a(href='mailto:d.miller@macmillan.co.uk')
-        |d.miller@macmillan.co.uk
+extends layout/default
 
-
+block content
+  article
+    header.page__title Contact
+    section.contact__person
+      p.contact__person_title Literary Agent
+      p.contact__person_name Ed Wilson at Johnson & Alcock
+      p.contact__person_link
+        a(href='mailto:ed@johnsonandalcock.co.uk')
+          |ed@johnsonandalcock.co.uk
+      p.contact__person_link
+        a(href='http://www.johnsonandalcock.co.uk/anna-thomasson/')
+          |johnsonandalcock.co.uk/anna-thomasson
+    section.contact__person
+      p.contact__person_title Publicist for #[i A Curious Friendship]
+      p.contact__person_name Dusty Miller at Macmillan
+      p.contact__person_link
+        a(href='mailto:d.miller@macmillan.co.uk')
+          |d.miller@macmillan.co.uk

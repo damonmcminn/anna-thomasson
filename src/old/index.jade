@@ -1,0 +1,16 @@
+doctype html
+html
+  include includes/header.jade
+body
+  include includes/menu.jade
+  div.row
+    #text.text-justify.col-xs-6
+      include includes/bio.html
+      div.amzn
+        |Buy a copy 
+        a(href='http://www.amazon.co.uk/Curious-Friendship-Story-Bluestocking-Bright/dp/1447245539')
+          |here
+        |.
+      include includes/quotes.html
+    div.col-xs-6
+      img(src='img/anna.jpg', class='img-responsive text-right', id='image')
