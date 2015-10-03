@@ -1,95 +1,37 @@
 $font: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
 $almostBlack: #171717;
 
-body {
-  font-family: $font;
-  color: $almostBlack;
-  margin-top: 3em;
-  margin-bottom: 3em;
-  padding-left: 5em;
-  padding-right: 5em;
-  width: 1200px; /* mobile is fucked */
+.page__title {
+  font-size: 6em;
+  font-weight: bold;
 }
 
-#name {
-  margin-bottom: -40px;
-  margin-left: 15px;
+// MENU
+.menu__item_italic {
+  font-style: italic;
+}
+
+// EVENTS
+.events {
+  // you get the idea
   font-size: 4em;
 }
 
-.menu-item {
-  font-size: 1em;
+.events__event {
+  @extend .events;
 }
 
-#menu {
-  margin-bottom: 3em;
+.events__event_past-event {
+  @extend .events__event;
+  text-decoration: line-through;
 }
 
-#quotes {
-  font-size: 0.8em;
-  color: #171717;
-}
-
-.no-padding {
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
-div {
-  margin-bottom: 1em;
-}
-
-#text {
-  margin: 0;
-  font-size: 1.5em;
-}
-
-.text {
-  font-size: 1.5em;
-}
-
-#cover {
-  padding-top: 2em;
-  padding-bottom: 2em;
-}
-
-#image {
-  height: 600px;
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 2em;
-}
-
-#curious-cover {
-  height: 652px;
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 2em;
-}
-
-.container {
-  max-width: 700px;
-}
-
-a {
-  font-size: 1.5em;
-  color: darkslategrey;
-  text-decoration: none;
-}
-
-.menu a {
-  font-size: inherit;
-  color: inherit;
-}
-
-.amzn a {
-  font-size: inherit;
-  color: inherit;
+// CONTACT
+.contact__person_title {
   text-decoration: underline;
 }
 
-#agency {
-  border-bottom: 2px dotted;
-  color: darkslategrey;
-  padding-bottom: 0.2em;
+body {
+  font-family: $font;
+  color: $almostBlack;
 }
