@@ -4,8 +4,10 @@
   "description": "",
   "main": "none",
   "scripts": {
-    "start": "gulp",
-    "build": "gulp build"
+    "mkdist": "if [ ! -d dist ]; then mkdir dist; fi",
+    "images": "npm run mkdist && cp -av src/img dist",
+    "start": "npm run images && gulp",
+    "build": "gulp build && npm run images"
   },
   "author": "Damon McMinn",
   "license": "All rights reserved",
@@ -15,5 +17,8 @@
     "gulp-jade": "^1.1.0",
     "gulp-livereload": "^3.8.1",
     "gulp-minify-css": "^1.2.1"
+  },
+  "devDependencies": {
+    "gulp-sass": "^2.0.4"
   }
 }

@@ -1,6 +1,9 @@
+$font: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+$almostBlack: #171717;
+
 body {
-  font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
-  color: #171717;
+  font-family: $font;
+  color: $almostBlack;
   margin-top: 3em;
   margin-bottom: 3em;
   padding-left: 5em;
@@ -47,7 +50,7 @@ div {
 
 #cover {
   padding-top: 2em;
-  padding-bottom; 2em;
+  padding-bottom: 2em;
 }
 
 #image {
