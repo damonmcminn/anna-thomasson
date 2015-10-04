@@ -1,3 +1,9 @@
+block vars
+
+//- conditional class helper
+//- Should probably dynamically do this from filename with gulp
+- function isActive (page) { return { class: page ? 'is-active': undefined } }
+
 doctype html
 html
   head
@@ -7,12 +13,13 @@ html
       href='style/at.css'
     )
   body
-    div.header
-      header: h1.site-title Anna Thomasson
-      nav.menu: ul
-        li.menu__item: a(href='index.html') Home
-        li.menu__item_italic: a(href='curious.html') A Curious Friendship
-        li.menu__item: a(href='events.html') Events
-        li.menu__item: a(href='contact.html') Contact
-    main
-      block content
+    div.page
+      div.navbar
+        header: h1.navbar__site-title Anna Thomasson
+        nav: ul.menu
+          li.menu__item&attributes(isActive(home)): a(href='index.html') Home
+          li.menu__item_italic&attributes(isActive(curious)): a(href='curious.html') A Curious Friendship
+          li.menu__item&attributes(isActive(events)): a(href='events.html') Events
+          li.menu__item&attributes(isActive(contact)): a(href='contact.html') Contact
+      main
+        block content

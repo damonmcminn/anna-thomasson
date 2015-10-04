@@ -1,37 +1,114 @@
+@import 'node_modules/sanitize.css/sanitize.scss';
+
 $font: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
-$almostBlack: #171717;
+$almost-black: #171717;
+$link-color: #2f4f4f;
+
+:root {
+  font-size: 1.3em;
+  font-family: $font;
+  color: $almost-black;
+
+  a {
+    color: $link-color;
+    &:hover {
+      color: lighten($link-color, 15%);
+    }
+  }
+}
+
+.page {
+  // Give the content some room
+  margin: 3em;
+}
 
 .page__title {
-  font-size: 6em;
+  font-size: 2em;
   font-weight: bold;
+  margin: auto;
+}
+
+.navbar {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.navbar__site-title {
+  // flex-grow: 1;
+  font-size: 2.5em;
+  font-weight: normal;
+}
+
+.menu {
+  @extend .navbar;
+  font-size: smaller;
+  // margin: auto;
+}
+
+.menu__item {
+  a {
+    color: $almost-black;
+  }
+
+  &.is-active {
+    text-decoration: underline;
+    text-decoration-style: wavy;
+  }
+
+  padding: 0 0.5em;
+  // align justified text
+  &:last-child {
+    padding-right: 0;
+  }
 }
 
 // MENU
 .menu__item_italic {
+  @extend .menu__item;
   font-style: italic;
 }
 
 // EVENTS
-.events {
-  // you get the idea
-  font-size: 4em;
-}
-
-.events__event {
-  @extend .events;
-}
-
 .events__event_past-event {
-  @extend .events__event;
   text-decoration: line-through;
 }
 
 // CONTACT
+.contact {
+  text-align: center;
+}
+
 .contact__person_title {
   text-decoration: underline;
 }
 
-body {
-  font-family: $font;
-  color: $almostBlack;
+// BOOK
+.book {
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.book__description {
+  font-weight: bold;
+  text-align: center;
+}
+
+.book__summary {
+  text-align: justify;
+}
+
+.book__date-published {
+  font-weight: bold;
+}
+
+.about {
+  text-align: justify;
+}
+
+.about__quotes {
+  font-size: 0.8em;
 }

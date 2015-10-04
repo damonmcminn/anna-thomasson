@@ -1,7 +1,10 @@
+block vars
+  - var curious = true
+
 extends layout/default
 
 block content
-  article
+  article.book
     p.book__description.
       A vivid and moving account of the remarkable
       relationship between the writer Edith Olivier and the young artist Rex Whistler
@@ -22,6 +25,7 @@ block content
         World War and with an extraordinary cast of friends and acquaintances,
         Anna Thomasson brings to life, for the first time, the fascinating, and
         curious, friendship of a bluestocking and a bright young thing.
-    p.book__date-published Published by Macmillan on #[date 26 March 2015]
-    p.book__purchase: include includes/amazon
     figure.book__cover: img(src='img/cover.jpg')
+    footer
+      p.book__date-published Published by Macmillan on #[date 26 March 2015]
+      p.book__purchase: include includes/amazon
