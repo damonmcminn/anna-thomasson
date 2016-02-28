@@ -46,7 +46,7 @@ gulp.task('sass', () => {
 
 gulp.task('watch', () => {
   livereload.listen();
-  gulp.watch('src/**/*.jade', ['html']);
+  gulp.watch(['src/**/*.jade', 'src/**/*.html'], ['html']);
   gulp.watch('src/js/*.js', ['js']).on('changed', livereload.changed);
   gulp.watch('src/styles/*.scss', ['sass']).on('changed', livereload.changed);
 });

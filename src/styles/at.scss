@@ -25,11 +25,6 @@ body {
   margin-bottom: 3em;
 }
 
-#quotes {
-  font-size: 0.8em;
-  color: #171717;
-}
-
 .no-padding {
   padding-left: 0px;
   padding-right: 0px;
@@ -60,7 +55,7 @@ div {
   margin-bottom: 2em;
 }
 
-#curious-cover {
+.book-cover {
   height: 652px;
   display: block;
   margin: 0 auto;
@@ -72,9 +67,12 @@ div {
 }
 
 a {
-  font-size: 1.5em;
   color: darkslategrey;
   text-decoration: none;
+}
+
+.large-link {
+  font-size: 1.5em;
 }
 
 .menu a {
@@ -92,4 +90,12 @@ a {
   border-bottom: 2px dotted;
   color: darkslategrey;
   padding-bottom: 0.2em;
+}
+
+#home-page-quote {
+  margin-top: 3em;
+}
+
+#quotes {
+  font-size: 1.1em;
 }

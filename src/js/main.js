@@ -16,6 +16,7 @@ function createEvent({ name, date, link, finished }) {
   if (link) {
     const a = document.createElement('a');
     a.setAttribute('href', link);
+    a.classList.add('large-link');
     a.innerHTML = text;
     div.appendChild(a);
   } else {
@@ -27,7 +28,7 @@ function createEvent({ name, date, link, finished }) {
 
 
 function renderEvents(events, parent) {
-  events.forEach(e => {
+  events.reverse().forEach(e => {
     parent.appendChild(createEvent(e));
   });
 }
